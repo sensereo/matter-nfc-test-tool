@@ -36,3 +36,14 @@ xcuserdata/
 
 # Local logs
 *.log
+
+# Platform build assets and local development configuration
+*.app/
+*.framework/
+*.xcframework/
+*.local.xcconfig
+*.pfx
+__pycache__/
+*.py[cod]
+.venv/
+.bundle/

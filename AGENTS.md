@@ -30,6 +30,15 @@ follow their preferred language.
 - Keep secrets, signing material, local network datasets, and device identities
   out of tracked files. Use clearly synthetic examples.
 
+## iOS scope
+
+- Keep iOS code, tests, scripts, and platform documentation under `apps/ios/`.
+- Focus this version on standalone NFC commissioning and IP ProductID verification.
+- Do not introduce HA integration, temperature reads, or multi-admin sharing without
+  a separate scope decision.
+- Keep inputs empty by default; never embed local setup payloads or network datasets.
+- Preserve the pinned framework integration and recovery/storage safety boundaries.
+
 ## Validation
 
 Run checks appropriate to the change and report their actual results. Once

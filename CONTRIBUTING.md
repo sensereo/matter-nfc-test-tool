@@ -4,9 +4,10 @@ Thank you for contributing to Matter NFC Test Tool.
 
 ## Before you start
 
-This repository is at the foundation stage. There are no application build or
-test commands yet. Discuss substantial implementation or dependency changes in
-an issue before beginning work.
+The repository contains an experimental iOS implementation. Read the
+[iOS build guide](apps/ios/docs/guides/building.md) and run
+`bash scripts/check.sh` from `apps/ios/` for offline checks. Discuss substantial
+implementation or dependency changes in an issue before beginning work.
 
 Use English for repository content, code, comments, UI text, issues, pull
 requests, and commit messages.
@@ -26,7 +27,7 @@ from logs and screenshots. Follow [SECURITY.md](SECURITY.md) for vulnerabilities
 1. Fork the repository and create a focused branch.
 2. Make the smallest coherent change and update relevant documentation.
 3. Run applicable checks. For documentation, check links and formatting. For
-   future code changes, include the documented build and test results, and state
+   code changes, include the documented build and test results, and state
    whether hardware validation was performed.
 4. Open a pull request describing the problem, change, and validation evidence.
 

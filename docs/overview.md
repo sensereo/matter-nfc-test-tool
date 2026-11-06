@@ -1,34 +1,18 @@
 # Project overview
 
-Verified on 2026-11-06 against the initial repository scaffold.
+Verified on 2026-11-06 against the current iOS source.
 
-## Purpose
+Matter NFC Test Tool helps developers exercise NFC commissioning on dedicated
+Matter-over-Thread experimental boards. The current code targets iOS; there is
+no Android implementation or promised Android delivery date.
 
-Matter NFC Test Tool is intended to help developers explore and test Matter
-communication over NFC from an iOS device.
+Platform-specific application code, tests, scripts, and documentation live under
+`apps/ios/`. Repository-wide policies and licensing remain at the root.
 
-## Current state
+The first version focuses on NFC commissioning, operational IP ProductID reads,
+one persistent tool Fabric, and diagnostic reports. It does not require a cloud
+account or Home Assistant. NFC setup-payload acquisition is not implemented:
+the user must supply the complete `MT:` payload manually.
 
-The repository currently provides documentation, contribution policies, issue
-and pull request templates, and development file conventions. It contains no
-application implementation, bundled framework, build pipeline, or release.
-
-## Planned scope
-
-Candidate capabilities include NFC transport diagnostics, Matter commissioning
-experiments, and device interaction checks. Platform requirements, dependency
-versions, supported hardware, and concrete workflows will be documented when
-implementation and validation evidence are available.
-
-This is a developer testing project. It does not currently make claims about
-production readiness, certification, or interoperability.
-
-## Implementation preparation
-
-Before publishing an implementation:
-
-- Review source and dependency redistribution rights and retain attribution.
-- Replace private environment assumptions with documented configuration.
-- Provide reproducible build and test instructions.
-- Document hardware requirements and separate simulated tests from device tests.
-- Publish only sanitized diagnostics and synthetic configuration examples.
+Hardware validation and external-user acceptance are pending. See the
+[iOS limitations](../apps/ios/docs/reference/limitations.md) for remaining work.
